@@ -1,0 +1,23 @@
+{
+  "name": "@cloudflare/agents-codemode-mcp-example",
+  "description": "Wrap any MCP server with codemode search + execute tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "types": "wrangler types env.d.ts --include-runtime false"
+  },
+  "dependencies": {
+    "@cloudflare/codemode": "*",
+    "@modelcontextprotocol/sdk": "1.29.0",
+    "agents": "*",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260604.1",
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.97.0"
+  }
+}
